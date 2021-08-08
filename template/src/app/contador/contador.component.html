@@ -1,0 +1,9 @@
+<h1>{{ numero }}</h1>
+
+<button (click)="incrementar()">Aperte-me para incrementar</button>
+
+<h1 *ngIf="exibirConteudo">Conteúdo oculto</h1>
+
+<button *ngIf="!exibirConteudo" (click)="toggle()">Aperta para exibir</button>
+
+<button *ngIf="exibirConteudo" (click)="toggle()">Aperta para ocultar</button>

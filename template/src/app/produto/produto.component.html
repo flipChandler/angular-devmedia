@@ -1,0 +1,16 @@
+<div [ngSwitch]="produto.tipo">
+    <app-revista *ngSwitchCase="'revista'"></app-revista>
+    <app-livro *ngSwitchCase="'livro'"></app-livro>
+    <app-filme *ngSwitchCase="'filme'"></app-filme>
+
+    <span *ngSwitchDefault>Produto Desconhecido</span>
+</div>
+
+
+<!-- ngFor com ngIf 
+    
+    <ng-container *ngFor="let dia of diasDaSemana”>
+    <div *ngIf="dia == hoje">
+        {{ dia }}
+    </div>
+</ng-container> -->
